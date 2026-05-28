@@ -1,7 +1,6 @@
 Dimitrescu Robert 312CA - Partea I
 World Cup 2026 player value prediction
-
-## 0. Pachete folosite pentru rulare cu venv (copy and paste):
+## 0. Pachete folosite pentru rulare cu venv (copy and paste), de asemenea nu am inclus player.csv in arhiva per cerintele temei. [Kaggle Dataset](https://www.kaggle.com/datasets/davidcariboo/player-scores?resource=download&select=players.csv):
 
 adjustText==1.3.0
 anyio==4.13.0
@@ -291,9 +290,7 @@ y_test statistics:
 ![](country_scatter.png)
 
 ### 6.g Comentarii si interpretări personale
-Avem markdown detailat pentru fiecare celula si explicat mai in detaliu decat in README.md + comments in cod.
-
-──────────────────────────────────────────
+Avem markdown detailat pentru fiecare celula si explicat mai in detaliu decat in README + comments in cod.
 
 ## 7. Antrenarea și evaluarea modelului
 
@@ -309,11 +306,8 @@ R²:   0.9266
 Interpretare: 
 
 * R^2 ne arata ca modelul are o rata de aproximare de 92% pentru valoarea jucatorilor din piata si este un rezultat suficient de bun considerand setul nostru de date.
-
 * MAE indica devierea in medie da la valoarea actuala cu 2.5 milioane de euro fata de valoarea reala.
-
 * RMSE indica faptul ca pentru jucatorii foarte valorosi care sunt definite outliers pretul lor este subestimat. Accest lucru se intampla deoarce majoritatea jucatorilor nostrii se incadreaza intre 0 - 25 M de euro.
-
 * Cel mai important factor de predicite a fost PEAK_MV deoarce valorile jucatorilor nu tind sa abata prea mult de la valoarea lor maxima inregistrata.
 
 ![](predicted_vs_actual.png)
